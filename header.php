@@ -46,7 +46,7 @@
                     <div class="top-right-text">
                         <a href="home.php">Home</a>
 						<a href="postForm.php">Create Post</a>
-                        <!-- <a href="dashboard.php">Dashboard</a> -->
+                        <a href="dashboard.php">Dashboard</a>
                        
                        <?php
 					    if(empty($email)) {

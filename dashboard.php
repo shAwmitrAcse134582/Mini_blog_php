@@ -5,7 +5,7 @@ include "header.php";
 
 session_start();
 
-$email = $_SESSION["email"];
+$username = $_SESSION["username"];
 $password = $_SESSION["password"];
 
 if (empty($email) || empty($password)) {
@@ -14,7 +14,7 @@ if (empty($email) || empty($password)) {
 }
 
 // Modify your SQL query to select only the posts associated with the logged-in user
-$s = "SELECT * FROM post WHERE email = '$email'";
+$s = "SELECT * FROM post WHERE username = '$username'";
 $result = $conn->query($s);
 ?>
 
